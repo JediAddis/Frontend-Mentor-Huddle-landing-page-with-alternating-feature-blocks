@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Poppins;
+    src: url(./font/Poppins-Medium.ttf);
+}
+/*Application de la police Poppins à toute la page*/
+html{
+    font-family: Poppins;
+}
+/*Application d'une même couleur à tout le corps du site*/
+body{
+    background-color: hsl(193, 100%, 96%);
+    margin: 0  auto;
+}
+/*Traitement des éléments compris dans la balise hearder*/
+header{
+    background-image: url(./images/bg-hero-mobile.svg) ;
+    background-size: fit-content;
+
+
+}
+.header1{
+    display: flex;
+    place-items: row;
+}
+.header1 img{
+    place-items: start;
+    
+}
+.try{
+    background-color: hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 10px;
+    border: hsl(0, 0%, 0%) solid 1px;
+
+
+
+}
+.header2{
+
+}
+h1{
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 25px 35px 5px 35px;
+}
+.headText{
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    padding: 5px 20px 10px 20px;
+}
+button{
+    font-weight: 600;
+    color: hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    border: hsl(322, 100%, 66%) solid 1px;
+    border-radius: 25px;
+    padding: 12px 40px 12px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*Alignement au centre des images du header et des sections*/ 
+img{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*Traitement des sections*/
+.Section h2{
+    color: hsl(192, 100%, 9%);
+    background-color: hsl(193, 100%, 96%);
+    text-align: center;
+}
+.Section p{
+    color: hsl(208, 11%, 55%);
+    font-size: 14px;
+    text-align: center;
+}
+.section1, .section2, .section3{
+    border:hsl(193, 100%, 96%) solid 1px;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 30px 15px 30px 15px;
+    box-shadow: 1px 4px 4px 2px hsl(208, 11%, 55%, 0.95);
+}
+
+
+
+
+
+
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    margin: 0 auto;
+}
