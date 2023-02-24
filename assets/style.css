@@ -1,23 +1,21 @@
-/*Importation police d'écriture*/
+/*Importation police d'écriture pour les Titres*/
 @font-face {
     font-family: Poppins;
     src: url(./font/Poppins-Medium.ttf);
 }
-/*Application de la police Poppins à toute la page*/
-html{
-    font-family: Poppins;
+/*Importation police d'écriture pour le reste de la page*/
+@font-face {
+    font-family: OpenSans ; 
+    src: url(./font/OpenSans-Light.ttf);
 }
 /*Application d'une même couleur à tout le corps du site*/
 body{
-    background-color: hsl(193, 100%, 96%);
+    background-color: white;
     margin: 0  auto;
 }
 /*Ajout d'une image en background de l'header*/
 header{
     background-image: url(./images/bg-hero-mobile.svg) ;
-    background-size: fit-content;
-
-
 }
 /*Alignement du logo et du bouton "try.."*/
 .header1{
@@ -27,11 +25,12 @@ header{
 }
 /* Design du bouton "try" et du logo du site*/
 .try{
-    background-color: hsl(193, 100%, 96%);
+    background-color: white;
     color: hsl(192, 100%, 9%);
     text-align: center;
     font-weight: 800;
     font-size: 10px;
+    font-family: OpenSans;
     padding: 6px 20px 6px 20px;
     border: hsl(193, 100%, 96%) solid 1px;
     box-shadow: 2px 2px 4px 2px hsl(208, 11%, 55%, 1.5);
@@ -42,28 +41,30 @@ header{
     height: 30%;
     float: left;
 }
-
 /*Contenu header*/
 h1{
     color: hsl(192, 100%, 9%);
     text-align: center;
     font-weight: 600;
     font-size: 22px;
+    font-family: Poppins;
     padding: 25px 35px 5px 35px;
 }
 .headText{
     color: hsl(192, 100%, 9%);
     text-align: center;
+    font-family: OpenSans;
+    font-weight: 600;
     padding: 5px 20px 10px 20px;
 }
 button{
     font-weight: 600;
-    color: hsl(193, 100%, 96%);
+    color: white;
     text-align: center;
     background-color: hsl(322, 100%, 66%);
     border: hsl(322, 100%, 66%) solid 1px;
     border-radius: 25px;
-    padding: 12px 40px 12px 20px;
+    padding: 12px 40px 12px 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -78,42 +79,36 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 /*Traitement des sections*/
+.section1, .section2, .section3{
+    background-color: white;
+    border:hsl(193, 100%, 96%) solid 1px;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 40px 15px 40px 15px;
+    box-shadow: 1px 4px 4px 2px hsl(208, 11%, 55%, 0.95);
+}
 .Section h2{
     color: hsl(192, 100%, 9%);
-    background-color: hsl(193, 100%, 96%);
     text-align: center;
+    font-family: Poppins;
 }
 .Section p{
     color: hsl(208, 11%, 55%);
     font-size: 14px;
     text-align: center;
+    font-family: OpenSans;
 }
-.section1, .section2, .section3{
-    border:hsl(193, 100%, 96%) solid 1px;
-    border-radius: 25px;
-    padding: 25px;
-    margin: 30px 15px 30px 15px;
-    box-shadow: 1px 4px 4px 2px hsl(208, 11%, 55%, 0.95);
-}
-
-
-
-
-
-
-
+/*Traitement du footer*/
 footer{
     background-color: hsl(192, 100%, 9%);
     color: hsl(193, 100%, 96%);
+    font-family: OpenSans;
     margin: 0 auto;
-    padding: 6px;
 }
-
 .ready{
-    background-color: hsl(193, 100%, 96%);
+    background-color: white;
     color: hsl(192, 100%, 9%);
     border-radius: 15px;
     text-align: center;
@@ -124,48 +119,65 @@ footer{
     z-index: 1 ;
     display: none;
 }
-
 /*Changement de couleur de logo.svg*/
 .logoFoot{
     fill: hsl(193, 100%, 96%);
-    filter: brightness(200); /*filtre provisoire, mis juste pour voir le logo sur la page*/
-
+    filter: saturate(0) brightness(100);
+    width: 8rem;
+    padding: 40px;
 }
 /*Placement des informations du footer en colonne*/
 .info {
-
-    padding: 15px;
+    display: block;
+    align-items: start;
+    width: 70%;
 }
 .Col1, .Col2, .Col3{
     display: flex;
     flex-direction: column;
-    font-size: 14px;
     text-align: left;
 }
-/*Placement des icones avant les informations*/
-.location::before{
-    content : url(./images/icon-location.svg);
-    padding: 10px 25px 50px 0px ;
+/*Traitement des icones*/
+.icon{
+    padding: 5%;
+    float: left; /*alignement des icones à gauche*/
+    display: flex;
+    flex-direction: column;
 }
-.phone::before{
-    content: url(./images/icon-phone.svg);
+.location{
+    padding: 5px 0px 55px 0px ;
 }
-.mail::before{
-    content: url(./images/icon-email.svg);
+.phone, .mail{
+    padding: 15px 5px 15px 0px;
 }
-
+.Col1 p{
+    text-align: left;
+    font-size: 14px ;
+    float: right; /*alignement des infos à droite */
+    width: 250px;
+    padding-bottom: 2px;
+}
+/*Modification de l'apparence des liens*/
 .links a{
     color: hsl(193, 100%, 96%);
     text-decoration: none;
+    font-size: 16px;
+    float: left;
 }
 /*Espacement entre les liens*/
 .Col2 a, .Col3 a {
-    padding: 5px 10px 5px 0px;
+    padding: 5px 10px 20px 20px;
 }
 /*Traitement de bas de page*/
 .Copyright{
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
 }
-.attribution { font-size: 10px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 10px; text-align: center; text-decoration: none; }
+.attribution a { color: hsl(228, 97%, 72%); text-decoration: none; }
+.attribution a:hover{ color:hsl(322, 100%, 66%)}
+
+/*Responsive sur pc*/
+@media (min-width: 375px) AND (max-width:1440px) {
+    
+}
