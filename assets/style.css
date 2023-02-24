@@ -173,7 +173,12 @@ footer{
     text-align: center;
     font-size: 11px;
 }
-.attribution { font-size: 10px; text-align: center; text-decoration: none; }
+.attribution { 
+    font-size: 10px; 
+    text-align: center; 
+    text-decoration: none;
+    margin-bottom: 0px;
+}
 .attribution a { color: hsl(228, 97%, 72%); text-decoration: none; }
 .attribution a:hover{ color:hsl(322, 100%, 66%)}
 
