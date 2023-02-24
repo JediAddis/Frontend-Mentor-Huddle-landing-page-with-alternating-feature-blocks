@@ -9,15 +9,11 @@
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <link rel="stylesheet" href="./assets/style.css">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
     <div class="header1">
-      <img src="./assets/images/logo.svg" alt="logo website">
+      <img src="./assets/images/logo.svg" alt="logo website" class="logo">
       <button class="try">Try It Free</button>
     </div>
     <div class="header2">
@@ -51,38 +47,48 @@
   
 
   <footer>
-    Ready To Build Your Community?
-    <button>Get Started For Free</button>
-    <img src="./assets/images/logo.svg" alt="logo website">
-    <div class="Col1">
-      <!--Adresse postale-->
-      <img src="./assets/images/icon-location.svg" alt="icon-location">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua</p>
-      <!--Contact par téléphone-->
-      <img src="./assets/images/icon-phone.svg" alt="icon-phone">
-      <p>+1-543-123-4567</p>
-      <!--Contact par mail-->
-      <img src="./assets/images/icon-email.svg" alt="icon-email">
-      <p>example@huddle.com</p>
-      
+    <div class="ready">
+      <p>Ready To Build Your Community?</p> 
+      <button>Get Started For Free</button>
     </div>
-    <div class="Col2">
-      <a href="#">About Us</a>
-      <a href="#">What We Do</a>
-      <a href="#">FAQ</a>
-    </div>
-    <div class="Col3">
-      <a href="#">Career</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
-    </div>
+    <img src="./assets/images/logo.svg" alt="logo website" class="logoFoot">
+    <!--Création de 2 grandes div pour mettre en colonne les logos et les textes-->
+      <!--<div class="icon">
+        <img src="./assets/images/icon-location.svg" alt="icon-location">
+        <img src="./assets/images/icon-phone.svg" alt="icon-phone">
+        <img src="./assets/images/icon-email.svg" alt="icon-email">
+      </div>-->
+      <div class="info">
+        <div class="Col1">
+          <!--Adresse postale-->
+          <p class="location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua</p>
+          <!--Contact par téléphone-->
+          <p class="phone">+1-543-123-4567</p>
+          <!--Contact par mail-->
+          <p class="mail">example@huddle.com</p>
+        </div>
+        <div class="links">
+          <div class="Col2">
+            <a href="#">About Us</a>
+            <a href="#">What We Do</a>
+            <a href="#">FAQ</a>
+        </div>
+          <div class="Col3">
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
 
-    &copy; Copyright 2018 Huddle. All rights reserved.
+
+
+    <p class="Copyright">&copy; Copyright 2018 Huddle. All rights reserved.</p>
   
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Jodie Addis</a>.
+      Coded by <a href="https://github.com/JediAddis">Jodie Addis</a>.
     </p>
   </footer>
 </body>

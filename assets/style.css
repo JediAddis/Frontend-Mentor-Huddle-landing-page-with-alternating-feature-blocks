@@ -1,3 +1,4 @@
+/*Importation police d'écriture*/
 @font-face {
     font-family: Poppins;
     src: url(./font/Poppins-Medium.ttf);
@@ -11,35 +12,38 @@ body{
     background-color: hsl(193, 100%, 96%);
     margin: 0  auto;
 }
-/*Traitement des éléments compris dans la balise hearder*/
+/*Ajout d'une image en background de l'header*/
 header{
     background-image: url(./images/bg-hero-mobile.svg) ;
     background-size: fit-content;
 
 
 }
+/*Alignement du logo et du bouton "try.."*/
 .header1{
     display: flex;
     place-items: row;
+    padding: 25px ;
 }
-.header1 img{
-    place-items: start;
-    
-}
+/* Design du bouton "try" et du logo du site*/
 .try{
     background-color: hsl(193, 100%, 96%);
     color: hsl(192, 100%, 9%);
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 10px;
-    border: hsl(0, 0%, 0%) solid 1px;
-
-
-
+    padding: 6px 20px 6px 20px;
+    border: hsl(193, 100%, 96%) solid 1px;
+    box-shadow: 2px 2px 4px 2px hsl(208, 11%, 55%, 1.5);
+    float: right;
 }
-.header2{
-
+.logo{
+    width: 30%;
+    height: 30%;
+    float: left;
 }
+
+/*Contenu header*/
 h1{
     color: hsl(192, 100%, 9%);
     text-align: center;
@@ -55,6 +59,7 @@ h1{
 button{
     font-weight: 600;
     color: hsl(193, 100%, 96%);
+    text-align: center;
     background-color: hsl(322, 100%, 66%);
     border: hsl(322, 100%, 66%) solid 1px;
     border-radius: 25px;
@@ -62,7 +67,10 @@ button{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    cursor: pointer;
+}
+.header2 img{
+    padding-top: 45px;
 }
 /*Alignement au centre des images du header et des sections*/ 
 img{
@@ -99,5 +107,65 @@ img{
 
 footer{
     background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
     margin: 0 auto;
+    padding: 6px;
 }
+
+.ready{
+    background-color: hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 25px 30px 25px;
+    /*on retire la div du flux normal de la page*/
+    position: absolute;
+    z-index: 1 ;
+    display: none;
+}
+
+/*Changement de couleur de logo.svg*/
+.logoFoot{
+    fill: hsl(193, 100%, 96%);
+    filter: brightness(200); /*filtre provisoire, mis juste pour voir le logo sur la page*/
+
+}
+/*Placement des informations du footer en colonne*/
+.info {
+
+    padding: 15px;
+}
+.Col1, .Col2, .Col3{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: left;
+}
+/*Placement des icones avant les informations*/
+.location::before{
+    content : url(./images/icon-location.svg);
+    padding: 10px 25px 50px 0px ;
+}
+.phone::before{
+    content: url(./images/icon-phone.svg);
+}
+.mail::before{
+    content: url(./images/icon-email.svg);
+}
+
+.links a{
+    color: hsl(193, 100%, 96%);
+    text-decoration: none;
+}
+/*Espacement entre les liens*/
+.Col2 a, .Col3 a {
+    padding: 5px 10px 5px 0px;
+}
+/*Traitement de bas de page*/
+.Copyright{
+    text-align: center;
+    font-size: 12px;
+}
+.attribution { font-size: 10px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
