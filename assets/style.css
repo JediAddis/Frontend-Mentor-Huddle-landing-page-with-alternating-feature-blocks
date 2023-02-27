@@ -19,9 +19,10 @@ header{
 }
 /*Alignement du logo et du bouton "try.."*/
 .header1{
-    display: flex;
-    place-items: row;
-    padding: 25px ;
+    display:flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 15px;
 }
 /* Design du bouton "try" et du logo du site*/
 .try{
@@ -31,15 +32,15 @@ header{
     font-weight: 800;
     font-size: 10px;
     font-family: OpenSans;
-    padding: 6px 20px 6px 20px;
+    padding: 6px 30px 6px 30px;
     border: hsl(193, 100%, 96%) solid 1px;
-    box-shadow: 2px 2px 4px 2px hsl(208, 11%, 55%, 1.5);
-    float: right;
+    box-shadow: 2px 2px 4px 2px hsl(208, 11%, 55%, 0.4);
 }
 .logo{
-    width: 30%;
-    height: 30%;
+    max-width: 40%;
+    position: relative;
     float: left;
+
 }
 /*Contenu header*/
 h1{
@@ -48,7 +49,7 @@ h1{
     font-weight: 600;
     font-size: 22px;
     font-family: Poppins;
-    padding: 25px 35px 5px 35px;
+    padding: 90px 35px 5px 35px;
 }
 .headText{
     color: hsl(192, 100%, 9%);
@@ -80,14 +81,18 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
 /*Traitement des sections*/
+.Section{
+    margin-bottom: 210px;
+}
 .section1, .section2, .section3{
     background-color: white;
     border:hsl(193, 100%, 96%) solid 1px;
     border-radius: 25px;
     padding: 25px;
     margin: 40px 15px 40px 15px;
-    box-shadow: 1px 4px 4px 2px hsl(208, 11%, 55%, 0.95);
+    box-shadow: 1px 4px 4px 2px hsl(208, 11%, 55%, 0.2);
 }
 .Section h2{
     color: hsl(192, 100%, 9%);
@@ -106,6 +111,7 @@ footer{
     color: hsl(193, 100%, 96%);
     font-family: OpenSans;
     margin: 0 auto;
+
 }
 .ready{
     background-color: white;
@@ -114,17 +120,19 @@ footer{
     text-align: center;
     font-weight: 700;
     padding: 30px 25px 30px 25px;
+    max-width: 280px;
     /*on retire la div du flux normal de la page*/
-    position: absolute;
+    margin: auto;
     z-index: 1 ;
-    display: none;
+    transform: translatey(-100px);
+    box-shadow: -2px -7px 4px -2px hsl(208, 11%, 55%, 0.3);
+
 }
 /*Changement de couleur de logo.svg*/
 .logoFoot{
-    fill: hsl(193, 100%, 96%);
     filter: saturate(0) brightness(100);
     width: 8rem;
-    padding: 40px;
+    padding: 30px;
 }
 /*Placement des informations du footer en colonne*/
 .info {
@@ -178,8 +186,11 @@ footer{
     text-align: center; 
     text-decoration: none;
     margin-bottom: 0px;
+    padding-bottom: 25px;
 }
-.attribution a { color: hsl(228, 97%, 72%); text-decoration: none; }
+.attribution a { 
+    color: hsl(228, 97%, 72%); 
+    text-decoration: none;  }
 .attribution a:hover{ color:hsl(322, 100%, 66%)}
 
 /*Responsive sur pc*/
