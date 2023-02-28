@@ -77,6 +77,18 @@ h1{
     margin-right: auto;
     cursor: pointer;
 }
+.freeBtn{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background-color: hsl(322, 100%, 66%);
+    border: hsl(322, 100%, 66%) solid 1px;
+    border-radius: 25px;
+    padding: 12px 40px 12px 40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
 .header2 img{
     padding-top: 45px;
 }
@@ -200,15 +212,57 @@ footer{
 .attribution a:hover{ color:hsl(322, 100%, 66%)}
 
 /*Responsive sur pc*/
-@media (max-width:1440px) and (min-width: 375px){
+@media (min-width:1440px){
     /*body {
         background-color: red ; 
     }*/
-    .logoHead {
-        max-width: 40%;
+    /*Traitement header*/
+    .header2 {
+        flex-direction: column;
+    }
+    .headText{
+        text-align: left;
+    }
+    .freeBtn{
+        justify-content: flex-start;
+    }
+    .headContent{
+        max-width: 35%;
+        float: left;
+        margin-left: 5%;
+    }
+    .header2 img{
+        max-width: 35%;
+    }
+    /*Traitement corps de la page*/
+    .Section{
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Section p, .Section h2 {
+        max-width: 50%;
+        text-align: left;
     }
     .Section img{
         max-width: 30%;
+        padding: 35px;
     }
+    .section1, .section3 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .section2{
+        display: flex;
+        flex-direction: row;
+    }
+    .sectContent{
+        display: flex;
+        flex-direction: column;
+    }
+    /*.Section h2{
+        text-align: left;
+    }*/
 
 }
