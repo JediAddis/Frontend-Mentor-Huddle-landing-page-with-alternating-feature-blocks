@@ -16,14 +16,16 @@ body{
 /*Ajout d'une image en background de l'header*/
 header{
     background-image: url(./images/bg-hero-mobile.svg) ;
+    background-color: hsl(193, 100%, 96%, 0.8);
+    /*background-repeat: no-repeat;
+    background-position: center;*/
 }
 /*Alignement du logo et du bouton "try.."*/
 .header1{
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     place-items: center stretch;
-    margin-top: 25px;
-    margin-left: 15px;
+    padding: 2%;
 }
 /* Design du bouton "try" et du logo du site*/
 .try {
@@ -69,12 +71,17 @@ h1{
     color: white;
     text-align: center;
     background-color: hsl(322, 100%, 66%);
-    border: hsl(322, 100%, 66%) solid 1px;
+    /*border: hsl(322, 100%, 66%) solid 1px;*/
+    border: none;
     border-radius: 25px;
     padding: 12px 40px 12px 40px;
+    box-shadow: 1px 2px 2px 2px hsl(208, 11%, 55%, 0.6);
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.free:hover{
+    background-color: hsl(322, 95%, 75%);
     cursor: pointer;
 }
 .freeBtn{
@@ -82,11 +89,15 @@ h1{
     color: white;
     text-align: center;
     background-color: hsl(322, 100%, 66%);
-    border: hsl(322, 100%, 66%) solid 1px;
+    border: none;
     border-radius: 25px;
     padding: 12px 40px 12px 40px;
+    box-shadow: 1px 2px 2px 2px hsl(208, 11%, 55%, 0.6);
     display: flex;
     justify-content: center;
+}
+.freeBtn:hover{
+    background-color: hsl(322, 95%, 75%);
     cursor: pointer;
 }
 .header2 img{
@@ -131,7 +142,8 @@ img{
     text-align: center;
     font-weight: 700;
     padding: 30px 25px 30px 25px;
-    max-width: 280px;
+    /*max-width: 280px;*/
+    max-width: 80%;
     /*on deplace le long de l'axe x*/
     margin: auto;
     transform: translatey(65px);
@@ -216,23 +228,38 @@ footer{
     /*body {
         background-color: red ; 
     }*/
+
     /*Traitement header*/
     .header2 {
         flex-direction: column;
+        margin-top: 15px ;
+        margin-bottom: 100px;
     }
     .headText{
         text-align: left;
+    }
+    .header2 h1{
+        font-size: 35px;
+    }
+    .header2 p{
+        font-size: 18px;
+    }
+    .headContent h1{
+        max-width: 80%;
+        padding-top: 10%;
+        font-weight: 700;
     }
     .freeBtn{
         justify-content: flex-start;
     }
     .headContent{
-        max-width: 35%;
+        max-width: 30%;
         float: left;
-        margin-left: 5%;
+        margin-left: 10%;
+        margin-top: 5%;
     }
     .header2 img{
-        max-width: 35%;
+        max-width: 40%;
     }
     /*Traitement corps de la page*/
     .Section{
@@ -242,12 +269,14 @@ footer{
         margin-right: auto;
     }
     .Section p, .Section h2 {
-        max-width: 50%;
         text-align: left;
     }
+    .Section p{
+        font-size: 18px;
+    }
     .Section img{
-        max-width: 30%;
         padding: 35px;
+        max-width: 40%;
     }
     .section1, .section3 {
         display: flex;
@@ -260,9 +289,11 @@ footer{
     .sectContent{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: 10rem;
     }
-    /*.Section h2{
-        text-align: left;
-    }*/
-
+    .ready{
+        max-width: 50%;
+        font-size: 18px;
+    }
 }
