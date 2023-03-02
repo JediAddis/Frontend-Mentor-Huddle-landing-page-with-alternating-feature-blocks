@@ -156,16 +156,17 @@ footer{
     font-family: OpenSans;
     margin: 0 auto;
 }
-.logoFoot, .footContent{
+.footContent{
     display: block;
     place-items: left auto;
-    
 }
 /*Changement de couleur de logo.svg*/
 .logoFoot{
     filter: saturate(0) brightness(100);
     max-width: 45%;
     padding: 120px 30px 5px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 /*Placement des informations du footer en colonne*/
 .Col1, .Col2, .Col3, .logoFoot{
@@ -193,10 +194,7 @@ footer{
     transform: translatey(-25px);
 }
 /*Modification de l'apparence des liens*/
-.links{
-    margin-top: 40px;
-}
-.links a{
+.Col2 a, .Col3 a {
     color: hsl(193, 100%, 96%);
     text-decoration: none;
     font-size: 16px;
@@ -205,6 +203,9 @@ footer{
 /*Espacement entre les liens*/
 .Col2 a, .Col3 a {
     padding: 5px 10px 20px 20px;
+}
+.socialNetwork{
+    display: none;
 }
 /*Traitement de bas de page*/
 .Copyright{
@@ -216,7 +217,7 @@ footer{
     text-align: center; 
     text-decoration: none;
     margin-bottom: 0px;
-    padding-bottom: 25px;
+    padding-bottom: 45px;
 }
 .attribution a { 
     color: hsl(228, 97%, 72%); 
@@ -296,4 +297,35 @@ footer{
         max-width: 50%;
         font-size: 18px;
     }
-}
+    /*Traitement du footer*/
+    .logoFoot{
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .socialNetwork{
+        filter:invert(1);
+        display: flex;
+        flex-direction: row;
+        max-width: 1.5rem;
+        gap: 1rem;
+        transform: translateY(-40%)
+    }
+    .socialNetwork:hover{
+        cursor: pointer;
+    }
+    .footContent {
+        display: flex;
+        flex-direction: row;
+        /*justify-content: space-around;*/
+        justify-content: space-evenly;
+        align-content: center;
+
+    }
+    .Copyright{
+        text-align: right;
+        padding: 20px 40px 50px 0;
+    }
+    .attribution{
+        padding-bottom: 20px;
+    }
