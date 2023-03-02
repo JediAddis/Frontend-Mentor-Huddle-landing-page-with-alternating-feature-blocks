@@ -17,8 +17,8 @@ body{
 header{
     background-image: url(./images/bg-hero-mobile.svg) ;
     background-color: hsl(193, 100%, 96%, 0.8);
-    /*background-repeat: no-repeat;
-    background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /*Alignement du logo et du bouton "try.."*/
 .header1{
@@ -84,7 +84,7 @@ h1{
     background-color: hsl(322, 95%, 75%);
     cursor: pointer;
 }
-.freeBtn{
+.freeBtn {
     font-weight: 700;
     color: white;
     text-align: center;
@@ -93,8 +93,9 @@ h1{
     border-radius: 25px;
     padding: 12px 40px 12px 40px;
     box-shadow: 1px 2px 2px 2px hsl(208, 11%, 55%, 0.6);
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .freeBtn:hover{
     background-color: hsl(322, 95%, 75%);
@@ -235,6 +236,7 @@ footer{
         flex-direction: column;
         margin-top: 15px ;
         margin-bottom: 100px;
+        padding-bottom: 20px;
     }
     .headText{
         text-align: left;
@@ -252,6 +254,7 @@ footer{
     }
     .freeBtn{
         justify-content: flex-start;
+        margin-left: 20px;
     }
     .headContent{
         max-width: 30%;
@@ -277,7 +280,8 @@ footer{
     }
     .Section img{
         padding: 35px;
-        max-width: 40%;
+        width: 35%;
+        height: 35%;
     }
     .section1, .section3 {
         display: flex;
@@ -294,8 +298,10 @@ footer{
         margin: 10rem;
     }
     .ready{
-        max-width: 50%;
+        max-width: 40%;
         font-size: 18px;
+        padding-top: 45px;
+        padding-bottom: 45px;
     }
     /*Traitement du footer*/
     .logoFoot{
@@ -305,6 +311,7 @@ footer{
     }
     .socialNetwork{
         filter:invert(1);
+        margin-right: 100px;
         display: flex;
         flex-direction: row;
         max-width: 1.5rem;
@@ -320,7 +327,6 @@ footer{
         /*justify-content: space-around;*/
         justify-content: space-evenly;
         align-content: center;
-
     }
     .Copyright{
         text-align: right;
