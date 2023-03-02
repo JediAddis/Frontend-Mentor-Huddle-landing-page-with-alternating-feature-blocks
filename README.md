@@ -13,7 +13,7 @@ First application of responsive on a project.
 
 Mobile version : 
 <p align="center">
-<img src="assets/readme/mobile1.png" width=50%>
+<img src="assets/readme/mobile1.png" width=40%>
 </p>
 
 
