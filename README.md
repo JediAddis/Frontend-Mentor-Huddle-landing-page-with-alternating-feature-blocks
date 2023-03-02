@@ -1,4 +1,5 @@
-# Challenge FrontEnd Mentor : Landing Page
+<h1 align="center">Challenge FrontEnd Mentor : Landing Page</h1>
+
 <p align="center">
 <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="vs code"/>
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"/> 
